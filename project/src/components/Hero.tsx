@@ -17,7 +17,7 @@ export function Hero() {
               <a href="https://github.com/Vidhan-59" className="text-black dark:text-white hover:opacity-80 transition-opacity">
                 <Github size={24} />
               </a>
-              <a href="https://www.linkedin.com/in/vidhan-shah-bb5577241/" className="text-black dark:text-white hover:opacity-80 transition-opacity">
+              <a href="https://in.linkedin.com/in/vidhan-shah-84b9453b8" className="text-black dark:text-white hover:opacity-80 transition-opacity">
                 <Linkedin size={24} />
               </a>
               <a href="mailto:vidhanshah59@gmail.com" className="text-black dark:text-white hover:opacity-80 transition-opacity">

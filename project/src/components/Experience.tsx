@@ -2,7 +2,7 @@ import React from 'react';
 import { Briefcase, ExternalLink } from 'lucide-react';
 
 export function Experience() {
-  const resumeLink = "https://drive.google.com/file/d/1JP-g_0QKRKZMSpgLP37T2ScVqTC8V5EO/view"; // Replace with your actual Drive link
+  const resumeLink = "https://drive.google.com/file/d/1LVX3iiJMZ8qB_rdDeWdwUaCMNXwwlmvl/view?usp=sharing";
 
   return (
     <section id="experience" className="py-20 bg-white dark:bg-black">
@@ -33,28 +33,32 @@ export function Experience() {
                   </span>
                 </div>
                 <p className="text-lg text-gray-600 dark:text-gray-300 mt-1">
-                  Backend/Full Stack Engineering Intern
+                  Software Engineering Intern – Full Stack & AI/ML
                 </p>
                 <ul className="mt-4 space-y-3">
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-black dark:bg-white mt-2"></span>
-                    <span>Working on backend and full-stack development for web applications using modern technologies and best practices</span>
+                    <span>Solely owned and drove the entire backend of production web applications, making independent architectural decisions across API design, data modelling, and cloud infrastructure</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-black dark:bg-white mt-2"></span>
-                    <span>Designing and implementing APIs, database schemas, and server-side logic</span>
+                    <span>Designed and built scalable RESTful APIs using Node.js and Python, architecting systems around AWS API Gateway, Load Balancers, and SQS-based event-driven pipelines for reliable, decoupled service communication</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-black dark:bg-white mt-2"></span>
-                    <span>Collaborating with front-end developers and product teams to integrate backend systems with user-facing features</span>
+                    <span>Developed and integrated LangChain and LangGraph AI pipelines with RAG architecture, adding intelligent, context-aware capabilities directly into the core product</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-black dark:bg-white mt-2"></span>
-                    <span>Handling deployment, continuous integration, and monitoring of applications in production environments</span>
+                    <span>Built and maintained full-stack features end-to-end using React.js on the frontend, taking complete ownership from backend API to UI integration</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-black dark:bg-white mt-2"></span>
-                    <span>Optimizing application performance and ensuring scalability and security of web applications</span>
+                    <span>Containerized services using Docker and managed CI/CD pipelines, owning the full deployment lifecycle from local development through production releases</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-black dark:bg-white mt-2"></span>
+                    <span>Designed and maintained database schemas across MongoDB and MySQL, handling query optimization, indexing, and schema evolution as the system grew</span>
                   </li>
                 </ul>
               </div>

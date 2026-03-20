@@ -12,7 +12,7 @@ export function Projects() {
       3. Interactive Learning: Creating an engaging platform with progress tracking, assessment quizzes, and a competitive ranking system
       4. Comprehensive Analytics: Providing detailed insights into learning patterns and progress
       5. Smart Assessment: Generating dynamic MCQs with video timestamp references for incorrect answers`,
-      tech: ['Django', 'React', 'MongoDB'],
+      tech: ['Django', 'React', 'MongoDB', 'Hugging Face', 'LangChain'],
       github: 'https://github.com/Vidhan-59/BiteLearn-Smart-Learning',
       images: [
         '/images/image1.png',
@@ -25,7 +25,7 @@ export function Projects() {
     {
       title: 'MegaMart',
       description: 'E-commerce website with PayPal integration for secure transactions, featuring intuitive navigation and dynamic product displays.',
-      tech: ['Django'],
+      tech: ['Django', 'PayPal API', 'SQLite'],
       github: 'https://github.com/Vidhan-59/Megamart'
     },
     {

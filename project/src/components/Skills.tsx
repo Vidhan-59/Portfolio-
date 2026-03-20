@@ -3,10 +3,11 @@ import React from 'react';
 export function Skills() {
   const skills = {
     'Programming Languages': ['Java', 'Python', 'C', 'C++', 'JavaScript', 'SQL'],
-    'Web Technologies': ['React JS', 'Node JS', 'Express JS', 'Bootstrap', 'Django', 'FastAPI'],
+    'Web Technologies': ['Node.js', 'Express.js', 'React.js', 'Bootstrap', 'Django', 'FastAPI'],
+    'AI/ML & LLM': ['LangChain', 'LangGraph', 'RAG', 'Hugging Face', 'Machine Learning'],
     'Databases': ['MongoDB', 'MySQL', 'SQLite'],
-    'Tools & Platforms': ['Git', 'GitHub', 'VSCode'],
-    'Other Skills': ['Problem Solving', 'Deployment', 'System Design']
+    'Cloud & DevOps': ['AWS SQS', 'API Gateway', 'Load Balancer', 'Docker', 'Git', 'GitHub', 'CI/CD'],
+    'Other Skills': ['System Design', 'REST APIs', 'Microservices', 'Problem Solving']
   };
 
   return (

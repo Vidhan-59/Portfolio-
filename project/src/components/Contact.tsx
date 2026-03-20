@@ -33,7 +33,7 @@ export function Contact() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/vidhan-shah-bb5577241/"
+              href="https://in.linkedin.com/in/vidhan-shah-84b9453b8"
               className="card-hover bg-gray-50 dark:bg-zinc-900 rounded-xl p-8 border border-gray-200 dark:border-gray-800 flex items-center shadow-md hover:shadow-lg transition-shadow"
               target="_blank"
               rel="noopener noreferrer"
