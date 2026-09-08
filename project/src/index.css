@@ -1,56 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+  background-color: #0A7A5F;
+  color: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FAFAF7;
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
+  background-color: #FAFAF7;
+  color: #12151B;
+  -webkit-font-smoothing: antialiased;
 }
 
-.gradient-bg {
-  @apply bg-white dark:bg-black;
+:focus-visible {
+  outline: 2px solid #0A7A5F;
+  outline-offset: 3px;
 }
 
-.nav-link {
-  position: relative;
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.015em;
 }
 
-.nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  @apply bg-black dark:bg-white;
-  transition: width 0.3s ease-in-out;
+.font-mono {
+  font-family: 'IBM Plex Mono', monospace;
 }
 
-.nav-link:hover::after {
-  width: 100%;
+/* accent eyebrow label */
+.tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #0A7A5F;
 }
 
-.mobile-menu {
-  transform-origin: top;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+.tag-invert {
+  color: #12A97F;
 }
 
-.mobile-menu.hidden {
-  transform: scaleY(0);
-  opacity: 0;
+.grid-veil {
+  background-image:
+    linear-gradient(rgba(18, 21, 27, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 21, 27, 0.045) 1px, transparent 1px);
+  background-size: 56px 56px;
 }
 
-.mobile-menu.visible {
-  transform: scaleY(1);
-  opacity: 1;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
-.card-hover {
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+::-webkit-scrollbar {
+  width: 10px;
 }
-
-.card-hover:hover {
-  transform: translateY(-4px);
-  @apply shadow-lg;
+::-webkit-scrollbar-track {
+  background: #F3F3EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #CFCFC6;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8B8AD;
 }

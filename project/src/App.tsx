@@ -1,28 +1,38 @@
-import React from 'react';
-import { ThemeProvider } from './context/ThemeContext';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Experience } from './components/Experience';
-import { Projects } from './components/Projects';
-import { Skills } from './components/Skills';
-import { Contact } from './components/Contact';
-import { Navbar } from './components/Navbar';
+import { Navbar } from './components/layout/Navbar';
+import { Footer } from './components/layout/Footer';
+import { Hero } from './components/sections/Hero';
+import { MetricsStrip } from './components/sections/MetricsStrip';
+import { Intro } from './components/sections/Intro';
+import { Experience } from './components/sections/Experience';
+import { Projects } from './components/sections/Projects';
+import { ProductEngineering } from './components/sections/ProductEngineering';
+import { ProductRole } from './components/sections/ProductRole';
+import { TechEcosystem } from './components/sections/TechEcosystem';
+import { HowIThink } from './components/sections/HowIThink';
+import { Education } from './components/sections/Education';
+import { Philosophy } from './components/sections/Philosophy';
+import { Contact } from './components/sections/Contact';
 
 function App() {
   return (
-    <ThemeProvider>
-      <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-200">
-        <Navbar />
-        <main>
-          <Hero />
-          <About />
-          <Experience />
-          <Skills />
-          <Projects />
-          <Contact />
-        </main>
-      </div>
-    </ThemeProvider>
+    <div className="min-h-screen bg-ink text-paper">
+      <Navbar />
+      <main>
+        <Hero />
+        <MetricsStrip />
+        <Intro />
+        <Experience />
+        <Projects />
+        <ProductEngineering />
+        <ProductRole />
+        <TechEcosystem />
+        <HowIThink />
+        <Education />
+        <Philosophy />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   );
 }
 

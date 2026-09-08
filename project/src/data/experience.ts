@@ -1,0 +1,35 @@
+export const experience = [
+  {
+    id: 'veracity',
+    company: 'Veracity Supply Chain Limited',
+    role: 'Assistant Product Manager',
+    subrole: 'Product Owner — ShiftEaze',
+    period: 'June 2026 — Present',
+    kind: 'current',
+    points: [
+      'Own the end-to-end product lifecycle for ShiftEaze, a shift-based workforce management platform live at Mundra Port (APSEZ).',
+      'Lead requirement discovery directly with terminal operations, translating rotating shift cycles and biometric attendance workflows into product specifications.',
+      'Authored 20+ BRDs covering rostering, attendance, leave, overtime, AI calling and operational workflows.',
+      'Directed product design and rollout of automated rostering with shift-cycle generation, rotation logic and conflict detection across the Terminal → Department → Batch hierarchy.',
+      'Shipped AI absence prediction and Hindi/Gujarati AI voice agents for shift confirmations, punch reminders and overtime requests.',
+      'Own sprint prioritisation, UAT, release planning and production rollout, working directly with engineering on Odoo 18, data models and production issues.',
+      'Built unified operational dashboards across manpower, attendance, leave and helpdesk for terminal leadership.',
+    ],
+  },
+  {
+    id: 'aasma',
+    company: 'Aasma Technology Solutions',
+    role: 'Software Engineer Intern',
+    subrole: 'Full Stack & AI/ML',
+    period: 'October 2024 — May 2026',
+    kind: 'previous',
+    points: [
+      'Owned backend architecture for production web applications — API design, data modelling and cloud infrastructure decisions.',
+      'Built scalable REST APIs in Node.js and Python, architected around AWS API Gateway, Elastic Load Balancer and SQS-based event-driven pipelines.',
+      'Developed LangChain and LangGraph pipelines with RAG architecture, adding context-aware AI capabilities into the core product.',
+      'Built full-stack features end-to-end in React, from backend API through UI integration.',
+      'Containerized services with Docker and managed CI/CD pipelines through GitHub Actions.',
+      'Designed and maintained MySQL schemas — indexing, query optimisation and schema migrations as the system scaled.',
+    ],
+  },
+];
