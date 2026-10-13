@@ -5,7 +5,7 @@ export const shiftEazeStats = [
 ];
 
 export const shiftEazeSummary =
-  'A shift-based workforce management platform for port and terminal operations, live at Mundra Port (APSEZ). It replaced spreadsheet-based rostering with automated scheduling, biometric attendance reconciliation and AI-assisted absence prediction across a Terminal → Department → Batch hierarchy.';
+  'A shift-based workforce management platform for port and terminal operations, live at Mundra Port. It replaced spreadsheet-based rostering with automated scheduling, biometric attendance reconciliation and AI-assisted absence prediction across a Terminal → Department → Batch hierarchy.';
 
 export const productModules = [
   { title: 'Automated Rostering', tag: 'PRODUCT' },

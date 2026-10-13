@@ -3,12 +3,11 @@ export const experience = [
     id: 'veracity',
     company: 'Veracity Supply Chain Limited',
     role: 'Assistant Product Manager',
-    subrole: 'Product Owner — ShiftEaze',
     period: 'June 2026 — Present',
     location: 'Gujarat, India',
     kind: 'current',
     points: [
-      'Own the end-to-end product for ShiftEaze, a workforce management platform live at Mundra Port (APSEZ) supporting 6,000+ operators across 12+ terminals; drive the roadmap, feature prioritization and release timelines.',
+      'Own the end-to-end product for ShiftEaze, a workforce management platform live at Mundra Port supporting 6,000+ operators across 12+ terminals; drive the roadmap, feature prioritization and release timelines.',
       'Design the architecture and user flows for rostering, attendance, leave, overtime and AI calling modules; authored 20+ Business Requirement Documents that turn client operations into build-ready specifications.',
       'Defined the automated rostering engine — shift-cycle generation, rotation logic and conflict detection across a Terminal/Department/Batch hierarchy — replacing manual spreadsheet-based planning.',
       'Led the ML attendance prediction pipeline (LightGBM, rule-based overrides, WoE logistic scorecard; nightly ingestion, weekly retraining), setting a 0.45 threshold to minimise false negatives given the cost of idle port machinery.',
