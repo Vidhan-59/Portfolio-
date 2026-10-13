@@ -1,27 +1,24 @@
 export const earlierProjects = [
   {
     title: 'BiteLearn',
-    description: 'AI-powered educational platform that generates transcripts, quizzes and progress tracking from video content.',
-    tech: ['Django', 'React', 'MongoDB', 'Hugging Face', 'LangChain'],
+    description:
+      'A Django REST backend with JWT auth serving a decoupled React frontend — tracking user progress, content metadata and analytics across MongoDB, with async job queuing so video and PDF processing never blocks the main request thread.',
+    tech: ['Django', 'React', 'MongoDB', 'REST APIs', 'JWT'],
     href: 'https://github.com/Vidhan-59/BiteLearn-Smart-Learning',
     image: '/images/image1.png',
   },
   {
-    title: 'Postman Collection Generator',
-    description: 'A LangGraph-based tool that parses FastAPI source with AST and generates ready-to-use Postman collections.',
-    tech: ['Python', 'FastAPI', 'LangGraph', 'ChromaDB', 'OpenRouter', 'AST parsing'],
-    href: 'https://github.com/Vidhan-59',
+    title: 'MegaMart',
+    description:
+      'A Django e-commerce backend with PayPal SDK payments, order lifecycle tracking and role-based access control. Session auth, CSRF protection and automated status tracking cut order management overhead by ~35%.',
+    tech: ['Django', 'PayPal API', 'SQLite', 'REST'],
+    href: 'https://github.com/Vidhan-59/Megamart',
   },
   {
-    title: 'Study with AI',
-    description: 'A RAG-based learning platform that answers study questions grounded in a learner’s own material via vector search.',
-    tech: ['Supabase', 'FastAPI', 'Streamlit', 'OpenRouter', 'Vector search'],
-    href: 'https://github.com/Vidhan-59',
-  },
-  {
-    title: 'ConnectHub',
-    description: 'A full-stack social application covering authentication, API design and deployment end to end.',
-    tech: ['React', 'REST APIs', 'Authentication', 'Deployment'],
-    href: 'https://github.com/Vidhan-59',
+    title: 'StealthCheck Data Detector',
+    description:
+      'A steganography detection tool using LSB analysis and statistical algorithms, reaching 90%+ detection accuracy on test datasets.',
+    tech: ['Python'],
+    href: 'https://github.com/Vidhan-59/Staganography',
   },
 ];

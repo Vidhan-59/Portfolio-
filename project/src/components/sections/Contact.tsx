@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, Github, ArrowUpRight } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github, ArrowUpRight, Download } from 'lucide-react';
 import { Reveal } from '../ui/Reveal';
 import { Eyebrow } from '../ui/Eyebrow';
 import { Button } from '../ui/Button';
@@ -13,7 +13,7 @@ const channels = [
 
 export function Contact() {
   return (
-    <section id="contact" className="bg-contrast grid-veil">
+    <section id="contact" className="bg-contrast ambient-dark">
       <div className="max-w-content mx-auto px-5 sm:px-8 py-24 sm:py-32">
         <Reveal>
           <Eyebrow invert>Let's connect</Eyebrow>
@@ -43,6 +43,14 @@ export function Contact() {
             >
               View LinkedIn
             </Button>
+            <Button
+              href={profile.resumeUrl}
+              download={profile.resumeFilename}
+              variant="secondaryOnDark"
+              icon={<Download size={15} />}
+            >
+              Download résumé
+            </Button>
           </div>
         </Reveal>
 
@@ -53,7 +61,7 @@ export function Contact() {
                 href={channel.href}
                 target={channel.external ? '_blank' : undefined}
                 rel={channel.external ? 'noopener noreferrer' : undefined}
-                className="group flex items-start gap-4 rounded-xl border border-line-invert bg-contrast-raised p-6 h-full transition-all duration-200 hover:border-beacon-bright hover:-translate-y-0.5"
+                className="glass-dark glass-lift group flex items-start gap-4 rounded-2xl p-6 h-full"
               >
                 <channel.icon size={18} className="text-beacon-bright mt-0.5 flex-shrink-0" />
                 <div>

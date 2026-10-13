@@ -11,7 +11,7 @@ const CENTER = { x: 300, y: 300 };
 
 export function HeroVisual() {
   return (
-    <div className="relative rounded-xl border border-line bg-card shadow-card grid-veil overflow-hidden aspect-square w-full max-w-[520px] mx-auto">
+    <div className="glass relative rounded-2xl grid-veil overflow-hidden aspect-square w-full max-w-[520px] mx-auto">
       <div className="absolute top-4 left-4 flex items-center gap-2 z-10">
         <span className="h-1.5 w-1.5 rounded-full bg-beacon animate-beacon" />
         <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted">System map</span>

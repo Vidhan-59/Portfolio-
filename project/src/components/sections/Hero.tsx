@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Download } from 'lucide-react';
 import { HeroVisual } from './HeroVisual';
 import { Button } from '../ui/Button';
 import { Eyebrow } from '../ui/Eyebrow';
@@ -42,8 +42,13 @@ export function Hero() {
               className="mt-10 flex flex-wrap items-center gap-5"
             >
               <Button href="#work">View my work</Button>
-              <Button href="#contact" variant="secondary">
-                Let's connect
+              <Button
+                href={profile.resumeUrl}
+                download={profile.resumeFilename}
+                variant="secondary"
+                icon={<Download size={15} />}
+              >
+                Download résumé
               </Button>
               <a
                 href={profile.linkedin}

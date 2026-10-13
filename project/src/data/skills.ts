@@ -1,22 +1,42 @@
 export const techEcosystem = [
   {
-    group: 'Product & Engineering',
-    items: ['Python', 'Node.js', 'Django', 'FastAPI', 'React', 'Next.js'],
+    group: 'Product & Management',
+    items: [
+      'Product Ownership',
+      'Roadmapping',
+      'BRD Writing',
+      'Requirement Gathering',
+      'Workflow Design',
+      'Feature Prioritization',
+      'Backlog Management',
+      'Timeline Planning',
+      'Client & Stakeholder Management',
+    ],
   },
   {
-    group: 'Cloud & Infrastructure',
-    items: ['AWS', 'Docker', 'GitHub Actions', 'Redis'],
+    group: 'Languages',
+    items: ['Python', 'JavaScript', 'SQL', 'Java', 'C', 'C++'],
   },
   {
-    group: 'Data',
-    items: ['MySQL', 'PostgreSQL', 'MongoDB', 'Supabase'],
+    group: 'Backend & Web',
+    items: ['Node.js', 'Express.js', 'Django', 'FastAPI', 'React', 'REST APIs', 'Microservices'],
   },
   {
-    group: 'AI / LLM',
-    items: ['LangChain', 'LangGraph', 'RAG', 'Vector Databases', 'OpenRouter', 'Google Gemini', 'Hugging Face'],
+    group: 'Data & AI/ML',
+    items: [
+      'LightGBM',
+      'Logistic Regression Scorecards',
+      'Attendance Prediction',
+      'RAG Pipelines',
+      'Workforce Analytics',
+    ],
   },
   {
-    group: 'Product Systems',
-    items: ['Odoo 18', 'REST APIs', 'Microservices', 'Event-driven systems'],
+    group: 'Databases & Cloud',
+    items: ['MongoDB', 'MySQL', 'SQLite', 'AWS SQS', 'API Gateway', 'Load Balancer', 'Docker', 'Git', 'CI/CD'],
+  },
+  {
+    group: 'Other',
+    items: ['System Design', 'Data Structures & Algorithms', 'JWT Authentication'],
   },
 ];

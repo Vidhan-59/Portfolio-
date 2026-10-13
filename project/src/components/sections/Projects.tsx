@@ -4,7 +4,7 @@ import { SectionHeading } from '../ui/SectionHeading';
 import { shiftEazeStats, shiftEazeSummary, productModules } from '../../data/shifteaze';
 import { earlierProjects } from '../../data/projects';
 
-const chip = 'font-mono text-[11px] px-2.5 py-1 rounded-md border border-line bg-surface/70 text-muted';
+const chip = 'glass-chip font-mono text-[11px] px-2.5 py-1 rounded-md text-muted';
 
 export function Projects() {
   const [featuredProject, ...restProjects] = earlierProjects;
@@ -16,7 +16,7 @@ export function Projects() {
 
         {/* ShiftEaze — flagship */}
         <Reveal delay={0.1}>
-          <div className="mt-14 rounded-xl border border-line bg-card shadow-card p-8 sm:p-10">
+          <div className="glass mt-14 rounded-2xl p-8 sm:p-10">
             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
               <div>
                 <span className="tag">Flagship</span>
@@ -41,7 +41,7 @@ export function Projects() {
 
             <div className="mt-7 flex flex-wrap gap-2">
               {productModules.map((mod) => (
-                <span key={mod.title} className="font-mono text-xs px-3 py-1.5 rounded-md border border-line bg-surface/70 text-muted">
+                <span key={mod.title} className="glass-chip font-mono text-xs px-3 py-1.5 rounded-md text-muted">
                   {mod.title}
                 </span>
               ))}
@@ -60,9 +60,9 @@ export function Projects() {
               href={featuredProject.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group h-full flex flex-col rounded-xl border border-line bg-card shadow-card overflow-hidden transition-all duration-200 hover:shadow-card-lift hover:-translate-y-1"
+              className="glass glass-lift group h-full flex flex-col rounded-2xl overflow-hidden"
             >
-              <div className="w-full aspect-[16/9] overflow-hidden border-b border-line bg-surface">
+              <div className="w-full aspect-[16/9] overflow-hidden border-b border-line bg-surface/60">
                 <img
                   src={featuredProject.image}
                   alt={`${featuredProject.title} interface screenshot`}
@@ -94,7 +94,7 @@ export function Projects() {
                   href={project.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group block h-full rounded-xl border border-line bg-card shadow-card p-6 transition-all duration-200 hover:shadow-card-lift hover:-translate-y-1"
+                  className="glass glass-lift group block h-full rounded-2xl p-6"
                 >
                   <div className="flex items-center justify-between">
                     <h3 className="font-display text-base font-semibold text-paper">{project.title}</h3>

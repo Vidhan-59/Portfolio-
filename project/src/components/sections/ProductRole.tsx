@@ -13,7 +13,7 @@ export function ProductRole() {
             description="Requirement discovery, BRDs, UX flows, sprint prioritisation, UAT, release planning, production rollout, engineering collaboration, product analytics and operational validation — across a live system, not a backlog."
           />
           <Reveal delay={0.1}>
-            <div className="rounded-xl border border-line bg-card shadow-card px-7 py-5 whitespace-nowrap">
+            <div className="glass rounded-2xl px-7 py-5 whitespace-nowrap">
               <div className="font-display text-3xl font-semibold text-beacon">20+</div>
               <div className="mt-1 font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
                 BRDs shipped

@@ -19,7 +19,7 @@ export function FlowSequence({ items, orientation = 'vertical', className = '' }
           }`}
         >
           <Reveal delay={i * 0.06}>
-            <div className="font-mono text-xs sm:text-sm px-4 py-2.5 rounded-lg border border-line bg-card shadow-card text-paper whitespace-nowrap">
+            <div className="glass font-mono text-xs sm:text-sm px-4 py-2.5 rounded-lg text-paper whitespace-nowrap">
               {item}
             </div>
           </Reveal>

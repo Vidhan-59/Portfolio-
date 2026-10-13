@@ -2,13 +2,15 @@ export const profile = {
   name: 'Vidhan Shah',
   role: 'Assistant Product Manager',
   company: 'Veracity Supply Chain Limited',
-  product: 'Product Owner — ShiftEaze',
   email: 'vidhanshah59@gmail.com',
   phone: '+91 94260 05911',
   phoneHref: '+919426005911',
   linkedin: 'https://www.linkedin.com/in/vidhan-shah-pm/',
   github: 'https://github.com/Vidhan-59',
-  location: 'Ahmedabad,Gujarat, India',
+  location: 'Ahmedabad, Gujarat, India',
+  // Served from /public — the `download` attribute sets the saved filename.
+  resumeUrl: '/Vidhan-Shah-Resume.pdf',
+  resumeFilename: 'Vidhan-Shah-Resume.pdf',
 };
 
 export const heroMetrics = [

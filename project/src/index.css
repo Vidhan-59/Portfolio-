@@ -17,8 +17,25 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   background-color: #FAFAF7;
-  color: #12151B;
+  color: #0F1419;
   -webkit-font-smoothing: antialiased;
+}
+
+/*
+  Ambient light field. Glass panels need something behind them to refract —
+  without this layer, backdrop-blur over a flat page just looks like a white card.
+  Fixed so the glows stay put while content scrolls over them.
+*/
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(55rem 38rem at 8% -8%, rgba(10, 122, 95, 0.14), transparent 62%),
+    radial-gradient(45rem 32rem at 100% 2%, rgba(14, 159, 143, 0.11), transparent 60%),
+    radial-gradient(50rem 34rem at 50% 108%, rgba(10, 122, 95, 0.10), transparent 62%);
 }
 
 :focus-visible {
@@ -35,7 +52,6 @@ body {
   font-family: 'IBM Plex Mono', monospace;
 }
 
-/* accent eyebrow label */
 .tag {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.75rem;
@@ -46,6 +62,73 @@ body {
 
 .tag-invert {
   color: #12A97F;
+}
+
+/* ---- Glass system ---------------------------------------------------- */
+
+.glass {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow:
+    0 1px 1px rgba(18, 21, 27, 0.03),
+    0 8px 32px rgba(18, 21, 27, 0.07);
+}
+
+/* Lighter-weight variant for small chips — no blur, to keep paint cost down */
+.glass-chip {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 1px 2px rgba(18, 21, 27, 0.04);
+}
+
+.glass-dark {
+  background: rgba(17, 24, 39, 0.55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+.glass-lift {
+  transition:
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.glass-lift:hover {
+  transform: translateY(-4px);
+  border-color: rgba(10, 122, 95, 0.35);
+  box-shadow:
+    0 1px 1px rgba(18, 21, 27, 0.03),
+    0 18px 44px rgba(18, 21, 27, 0.12),
+    0 0 0 1px rgba(10, 122, 95, 0.08);
+}
+
+.glass-dark.glass-lift:hover {
+  border-color: rgba(18, 169, 127, 0.45);
+  box-shadow:
+    0 18px 44px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(18, 169, 127, 0.15);
+}
+
+/* Ambient glow inside the dark bands, so dark glass has light to refract */
+.ambient-dark {
+  position: relative;
+  isolation: isolate;
+}
+
+.ambient-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(38rem 24rem at 10% 0%, rgba(18, 169, 127, 0.18), transparent 62%),
+    radial-gradient(34rem 22rem at 96% 100%, rgba(18, 169, 127, 0.12), transparent 60%);
 }
 
 .grid-veil {
@@ -67,18 +150,21 @@ body {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+  .glass-lift:hover {
+    transform: none;
+  }
 }
 
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #F3F3EE;
+  background: #F4F6F9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #CFCFC6;
+  background: #C7CEDA;
   border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #B8B8AD;
+  background: #AEB8C8;
 }

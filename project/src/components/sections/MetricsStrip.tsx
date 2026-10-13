@@ -4,7 +4,7 @@ import { heroMetrics } from '../../data/profile';
 
 export function MetricsStrip() {
   return (
-    <section className="bg-contrast">
+    <section className="bg-contrast ambient-dark">
       <div className="max-w-content mx-auto px-5 sm:px-8 py-16 sm:py-20">
         <Reveal>
           <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted-invert">

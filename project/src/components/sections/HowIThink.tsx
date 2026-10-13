@@ -12,7 +12,7 @@ export function HowIThink() {
           {howIThink.map((item, i) => (
             <Reveal key={item.title} delay={i * 0.07}>
               <div
-                className={`h-full rounded-xl border border-line bg-card shadow-card p-8 sm:p-10 transition-shadow duration-200 hover:shadow-card-lift ${
+                className={`glass glass-lift h-full rounded-2xl p-8 sm:p-10 ${
                   i === howIThink.length - 1 ? 'md:col-span-2' : ''
                 }`}
               >

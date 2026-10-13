@@ -27,6 +27,7 @@ export function Experience() {
                   <p className="mt-1 text-sm text-muted">{role.role}</p>
                   <p className="text-sm text-beacon">{role.subrole}</p>
                   <p className="mt-3 font-mono text-xs uppercase tracking-[0.14em] text-dim">{role.period}</p>
+                  <p className="mt-1 font-mono text-xs uppercase tracking-[0.14em] text-dim">{role.location}</p>
                 </div>
 
                 <ul className="space-y-4">

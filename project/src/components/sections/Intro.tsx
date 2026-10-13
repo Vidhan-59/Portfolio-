@@ -18,7 +18,7 @@ export function Intro() {
                   Frames image region x 285-555, y 440-710 (270px square):
                   width = 889/270, left = -285/270, top = -440/270.
                 */}
-                <div className="relative h-52 w-52 sm:h-60 sm:w-60 overflow-hidden rounded-full border border-line bg-surface shadow-card">
+                <div className="glass glass-lift relative h-52 w-52 sm:h-60 sm:w-60 overflow-hidden rounded-full p-0">
                   <img
                     src="/images/profile.jpg"
                     alt="Portrait of Vidhan Shah"
